@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lister Duazo Yatan</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- CSS SECTION -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/kb.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+
+    </head>
+      <body>
+
+
+        <!-- HEADER SECTION KEN BURNS EFFECT APPLIES HERE -->
+        <header>
+          <div class="full-width">
+            <h1 class="header-img">
+              <img src="images/yatz-logo.png">
+              <div>
+                <a href="#" class="header-link">DISCOVER MORE</a>
+              </div>
+            </h1>
+            <div class="slideshow">
+              <div class="slideshow-image" style="background-image: url('images/back-4.jpg')">
+              </div>
+              <div class="slideshow-image" style="background-image: url('images/back-1.jpg')">
+              </div>
+              <div class="slideshow-image" style="background-image: url('images/back-2.jpg')">
+              </div>
+              <div class="slideshow-image" style="background-image: url('images/back-0.jpg')">
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+<style>
+.header-link{
+  padding: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-style: solid;
+  border-color: white;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+        <!-- SCRIPT SECTIONS HERE -->
+        <script src="js/aos.js"></script>
+        <script>
+          AOS.init();
+
+          // You can also pass an optional settings object
+          // below listed default settings
+          AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+          });
+        </script>
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+  
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top a').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+</script>
+
+
+      </body>
+</html>
+
+
